@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Stranata na Boro</title>
+
+        <meta name = "keywords" content = "web page, Boro, Boro najjak,
+        Najjak, Nema podobar">
+        <meta name = "description" content = "Ths website will help you
+        learn something about me.">
+
+        <style type="text/css">
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .nav {
+                height: 100%;
+                width: 200px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                background-color: #111;
+                list-style-type: none;
+            }
+            .nav a {
+                color: white;
+                padding: 16px;
+                display: block;
+                text-decoration: none;
+            }
+            .nav a:hover {
+                background-color: white;
+                color: black;
+            }
+            .content {
+                margin-left: 200px;
+                padding-left: 20px;
+            }
+
+            div.gallery {
+                border: 1px solid grey;
+            }
+            div.gallery:hover {
+                border: 1px solid black;
+            }
+            div.gallery img {
+                width: 100%;
+                height: auto;
+                
+            }
+            div.description {
+                padding: 10px;
+                text-align: center;
+            }
+            .shirina {
+                padding: 0px 6px;
+                float: left;
+                width: 25%;
+                margin-bottom: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nav">
+            <a href="#Home">Welcome</a>
+            <a href="#Favorites">Favorite Things</a>
+            <a href="#Gallery">Gallery</a>
+            <a href="#Blog">Blog</a>
+            <a href="#Question">Questionnaire</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <div class="content">
+            <h2 id="Home">Welcome to my website</h2>
+            <p> <img src="Profile.jpg" alt="Profile picture"
+                style="border-radius: 50%; border: 1px solid gray;
+                width: 300px; padding: 4px;"></p>
+            <p>
+                A college student looking to learn as much as possible about the world of programming.
+                <ul>General:
+                    <li>Mathematics</li>
+                    <li>Science</li>
+                    <li>Electrical and software engineering</li>
+                </ul>
+                <ul>Field of study:
+                    <li>Computer Technology and Informatics</li>
+                    <li>C/C++ programming</li>
+                </ul>
+                <ul>Goals for the future:
+                    <li>C#</li>
+                    <li>Online programming (HTML, CSS, JS)</li>
+                    <li> Python</li>
+                </ul>
+            </p>
+            
+            <hr>
+
+            <h2 id="Favorites">A few things I like</h2>
+            <article>
+                <details>
+                    <summary>Music</summary>
+                    <ul>
+                        <li>Metal</li>
+                        <li>Rock</li>
+                        <li>Pop</li>
+                        <li>Rap</li>
+                        <li>Honestly, all types of music except for turbo-folk.</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>Free time</summary>
+                    <ul>
+                        <li>Going to the gym</li>
+                        <li>Watching movies and tv shows</li>
+                        <li>Gaming</li>
+                        <li>Going out</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>Gaming</summary>
+                    <ul>
+                        <li>Valorant</li>
+                        <li>League of Legends</li>
+                        <li>Among Us</li>
+                        <li>Doom</li>
+                        <li>There are a lot of games that I like.</li>
+                    </ul>
+                </details>
+            </article>
+
+            <hr>
+
+            <h2 id="Gallery">Gallery</h2>
+
+            <div class="shirina">
+                <div class="gallery">
+                    <a target="_blank" href="Zbunet.JPG">
+                        <img src="Zbunet.JPG" alt="Zbunet" width="288" height="432">
+                    </a>
+                    <div class="description">Confused Boro</div>
+                </div>
+            </div>
+
+            <div class="shirina">
+                <div class="gallery">
+                    <a target="_blank" href="Srekjen1.JPG">
+                        <img src="Srekjen1.JPG" alt="Srekjen1" width="288" height="432">
+                    </a>
+                    <div class="description">Hyped Boro</div>
+                </div>
+            </div>
+
+            <div class="shirina">
+                <div class="gallery">
+                    <a target="_blank" href="Srekjen.JPG">
+                        <img src="Srekjen.JPG" alt="Srekjen" width="288" height="432">
+                    </a>
+                    <div class="description">Winner Boro</div>
+                </div>
+            </div>
+
+            <div class="shirina">
+                <div class="gallery">
+                    <a target="_blank" href="Rap.JPG">
+                        <img src="Rap.JPG" alt="Rap" width="600" height="800">
+                    </a>
+                    <div class="description">Rapping Boro.. For some reason</div>
+                </div>
+            </div>
+
+            <div class="shirina">
+                <div class="gallery">
+                    <a target="_blank" href="Karanje.JPG">
+                        <img src="Karanje.JPG" alt="Angry" width="288" height="432">
+                    </a>
+                    <div class="description">Angry Boro</div>
+                </div>
+            </div>
+
+            <div class="shirina">
+                <div class="gallery">
+                    <a target="_blank" href="Vnimatelen.JPG">
+                        <img src="Vnimatelen.JPG" alt="Vnimatelen" width="288" height="432">
+                    </a>
+                    <div class="description">Happy Boro</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <hr>
+
+            <h2 id="Blog">Share something with me</h2>
+            <p>Feel free to tell me whatever you want.</p>
+
+            <form>
+                <p><label>Name: 
+                    <input name="name" type="text" size="30">
+                </label></p>
+                <p><label>Comment:<br>
+                <textarea name="comment" rows="5" cols="36"></textarea>
+            </label></p>
+            <p>
+                <input type = "reset" value = "Submit">
+                <input type = "reset" value = "Clear">
+             </p>
+             <!--Dvete kopcinja mi pravat "reset" taka shto davaat iluzija na postiranje komentar-->
+            </form>
+
+            <hr>
+
+            <h2 id="Question">What do you think of the website?</h2>
+            <p>Please answer a few questions so that I can improve the site.</p>
+
+            <p>
+                <strong>What did you think of the following?</strong>
+            </p>
+            <p>
+                <label>Design:
+                    <select>
+                        <option>Amazing</option>
+                        <option>Great</option>
+                        <option>Could be better</option>
+                        <option>Bad</option>
+                        <option>Terrible</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <label>Ease of use:
+                    <select>
+                        <option>Amazing</option>
+                        <option>Great</option>
+                        <option>Could be better</option>
+                        <option>Bad</option>
+                        <option>Terrible</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <label>Complexity: (between 0 and 100)</label>
+                <input type="range" min="0" max="100">
+            </p>
+            <p>
+                <label>What about me?
+                    <select>
+                        <option>Perfect</option>
+                        <option>Perfect</option>
+                        <option>Perfect</option>
+                        <option>Perfect</option>
+                        <option>Perfect</option>
+                    </select>
+                </label>
+            </p>
+            <p><strong> Thank you for your time! :)</strong></p>
+
+            <hr>
+
+            <footer>
+                <h2 id="Contact">Contact information:</h2>
+                <address>Contact me at:<br><a href="mailto:borisstev1@t-home.mk">
+                    E-Mail<br></a>
+                    <a href="https://www.instagram.com/borioos/">
+                    Instagram<br></a>
+                    <a href="https://www.facebook.com/boris.stevanovski">
+                    Facebook</a>
+                </address>
+            </footer>
+        </div>
+    </body>
+</html>
