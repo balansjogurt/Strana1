@@ -4,7 +4,6 @@
     <head>
         <meta charset="utf-8">
         <title>Stranata na Boro</title>
-
         <meta name = "keywords" content = "web page, Boro, Boro najjak,
         Najjak, Nema podobar">
         <meta name = "description" content = "Ths website will help you
@@ -64,8 +63,8 @@
             }
         </style>
     </head>
-
     <body>
+        
         <div class="nav">
             <a href="#Home">Welcome</a>
             <a href="#Favorites">Favorite Things</a>
@@ -143,7 +142,12 @@
                         <img src="Zbunet.JPG" alt="Zbunet" width="288" height="432">
                     </a>
                     <div class="description">Confused Boro<br>
-                        <input type = "reset" value = "Like"></div> <!--Poradi toa shto nemam java script vo kodot, nema da raboti Like sistemot-->
+                        <input type = "button" value = "Like" id="LikeButton1">
+                        <span id="DisplayCount1">0</span> - Likes
+                        <input type="text" id="Comment1" size="10">
+                        <input type = "button" value = "Submit" id="PasteComment1"><br>
+                        <p id="DisplayComment1"></p>
+                    </div>
                 </div>
             </div>
 
@@ -153,7 +157,12 @@
                         <img src="Srekjen1.JPG" alt="Srekjen1" width="288" height="432">
                     </a>
                     <div class="description">Hyped Boro<br>
-                        <input type = "reset" value = "Like"></div>
+                        <input type = "button" value = "Like" id="LikeButton2">
+                        <span id="DisplayCount2">0</span> - Likes
+                        <input type="text" id="Comment2" size="10">
+                        <input type = "button" value = "Submit" id="PasteComment2"><br>
+                        <p id="DisplayComment2"></p>
+                    </div>
                 </div>
             </div>
 
@@ -163,7 +172,12 @@
                         <img src="Srekjen.JPG" alt="Srekjen" width="288" height="432">
                     </a>
                     <div class="description">Winner Boro<br>
-                        <input type = "reset" value = "Like"></div>
+                        <input type = "button" value = "Like" id="LikeButton3">
+                        <span id="DisplayCount3">0</span> - Likes
+                        <input type="text" id="Comment3" size="10">
+                        <input type = "button" value = "Submit" id="PasteComment3"><br>
+                        <p id="DisplayComment3"></p>
+                    </div>
                 </div>
             </div>
 
@@ -173,7 +187,12 @@
                         <img src="Rap.JPG" alt="Rap" width="600" height="800">
                     </a>
                     <div class="description">Rapping Boro.. For some reason<br>
-                        <input type = "reset" value = "Like"></div>
+                        <input type = "button" value = "Like" id="LikeButton4">
+                        <span id="DisplayCount4">0</span> - Likes
+                        <input type="text" id="Comment4" size="10">
+                        <input type = "button" value = "Submit" id="PasteComment4"><br>
+                        <p id="DisplayComment4"></p>
+                    </div>
                 </div>
             </div>
 
@@ -183,7 +202,12 @@
                         <img src="Karanje.JPG" alt="Angry" width="288" height="432">
                     </a>
                     <div class="description">Angry Boro<br>
-                        <input type = "reset" value = "Like"></div>
+                        <input type = "button" value = "Like" id="LikeButton5">
+                        <span id="DisplayCount5">0</span> - Likes
+                        <input type="text" id="Comment5" size="10">
+                        <input type = "button" value = "Submit" id="PasteComment5"><br>
+                        <p id="DisplayComment5"></p>
+                    </div>
                 </div>
             </div>
 
@@ -193,7 +217,13 @@
                         <img src="Vnimatelen.JPG" alt="Vnimatelen" width="288" height="432">
                     </a>
                     <div class="description">Happy Boro<br>
-                        <input type = "reset" value = "Like"></div>
+                        <input type = "button" value = "Like" id="LikeButton6">
+                        <span id="DisplayCount6">0</span> - Likes
+
+                        <input type="text" id="Comment6" size="10">
+                        <input type = "button" value = "Submit" id="PasteComment6"><br>
+                        <p id="DisplayComment6"></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -207,16 +237,16 @@
 
             <form>
                 <p><label>Name: 
-                    <input name="name" type="text" size="30">
+                    <input name="name" type="text" size="30" id="PostName">
                 </label></p>
                 <p><label>Comment:<br>
-                <textarea name="comment" rows="5" cols="36"></textarea>
+                <textarea name="comment" rows="5" cols="36" id="PostComment"></textarea>
             </label></p>
             <p>
-                <input type = "reset" value = "Submit">
+                <input type = "button" value = "Submit" id="PostButton">
                 <input type = "reset" value = "Clear">
-             </p>
-             <!--Dvete kopcinja mi pravat "reset" taka shto davaat iluzija na postiranje komentar-->
+                <p id="DisplayPost"></p>
+            </p>
             </form>
 
             <hr>
@@ -279,5 +309,10 @@
                 </address>
             </footer>
         </div>
+
+        <script src="likes.js"></script>
+        <script src="comments.js"></script>
+        <script src="post.js"></script>
+
     </body>
 </html>
