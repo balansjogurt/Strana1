@@ -1,6 +1,7 @@
 //Mnogu e losh kodot. Ich ne e eleganten.
 //Ama da ne bev mrza ke sednev da go popravam...
 //Za kraj posredeno ke go napravam!
+
 var button1 = document.getElementById("LikeButton1");
 var button2 = document.getElementById("LikeButton2");
 var button3 = document.getElementById("LikeButton3");

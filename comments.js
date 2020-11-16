@@ -1,6 +1,7 @@
 //Mnogu e losh kodot. Ich ne e eleganten.
 //Ama da ne bev mrza ke sednev da go popravam...
 //Za kraj posredeno ke go napravam!
+
 var paste1 = document.getElementById("PasteComment1");
 var paste2 = document.getElementById("PasteComment2");
 var paste3 = document.getElementById("PasteComment3");
