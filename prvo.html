@@ -9,59 +9,8 @@
         <meta name = "description" content = "Ths website will help you
          to learn something about me.">
 
-        <style type="text/css">
-            * {
-                box-sizing: border-box;
-            }
-            body {
-                margin: 0;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-            .nav {
-                height: 100%;
-                width: 200px;
-                position: fixed;
-                top: 0;
-                left: 0;
-                background-color: #111;
-            }
-            .nav a {
-                color: white;
-                padding: 16px;
-                display: block;
-                text-decoration: none;
-            }
-            .nav a:hover {
-                background-color: white;
-                color: black;
-            }
-            .content {
-                margin-left: 200px;
-                padding-left: 20px;
-            }
+        <link rel="stylesheet" type="text/css" href="styles.css">
 
-            div.gallery {
-                border: 1px solid grey;
-            }
-            div.gallery:hover {
-                border: 1px solid black;
-            }
-            div.gallery img {
-                width: 100%;
-                height: auto;
-                
-            }
-            div.description {
-                padding: 10px;
-                text-align: center;
-            }
-            .shirina {
-                padding: 0px 6px;
-                float: left;
-                width: 25%;
-                margin-bottom: 30px;
-            }
-        </style>
     </head>
     <body>
         
@@ -76,7 +25,7 @@
 
         <div class="content">
             <h2 id="Home">Welcome to my website</h2>
-            <p> <img src="Profile.jpg" alt="Profile picture"
+            <p> <img src="Sliki/Profile.jpg" alt="Profile picture"
                 style="border-radius: 50%; border: 1px solid gray;
                 width: 300px; padding: 4px;"></p>
             <p>
@@ -138,15 +87,15 @@
 
             <div class="shirina">
                 <div class="gallery">
-                    <a target="_blank" href="Zbunet.JPG">
-                        <img src="Zbunet.JPG" alt="Zbunet" width="288" height="432">
+                    <a target="_blank" href="Sliki/Zbunet.JPG">
+                        <img src="Sliki/Zbunet.JPG" alt="Zbunet" width="288" height="432">
                     </a>
                     <div class="description">Confused Boro<br>
-                        <input type = "button" value = "Like" id="LikeButton1">
-                        <span id="DisplayCount1">0</span> - Likes
+                        <input type = "image" name = "Like" id="LikeButton1" src="Sliki/lajk.png" width="40" height="40">
+                        <span id="DisplayCount1">0</span> - Likes<br>
 
                         <input type="text" id="Comment1" size="10">
-                        <input type = "button" value = "Submit" id="PasteComment1"><br>
+                        <input type = "image" name = "Submit" id="PasteComment1" src="Sliki/koment.png" width="30" height="30"><br>
                         <p id="DisplayComment1"></p>
                     </div>
                 </div>
@@ -154,15 +103,15 @@
 
             <div class="shirina">
                 <div class="gallery">
-                    <a target="_blank" href="Srekjen1.JPG">
-                        <img src="Srekjen1.JPG" alt="Srekjen1" width="288" height="432">
+                    <a target="_blank" href="Sliki/Srekjen1.JPG">
+                        <img src="Sliki/Srekjen1.JPG" alt="Srekjen1" width="288" height="432">
                     </a>
                     <div class="description">Hyped Boro<br>
-                        <input type = "button" value = "Like" id="LikeButton2">
-                        <span id="DisplayCount2">0</span> - Likes
+                        <input type = "image" name = "Like" id="LikeButton2" src="Sliki/lajk.png" width="40" height="40">
+                        <span id="DisplayCount2">0</span> - Likes<br>
 
                         <input type="text" id="Comment2" size="10">
-                        <input type = "button" value = "Submit" id="PasteComment2"><br>
+                        <input type = "image" name = "Submit" id="PasteComment2" src="Sliki/koment.png" width="30" height="30"><br>
                         <p id="DisplayComment2"></p>
                     </div>
                 </div>
@@ -170,15 +119,15 @@
 
             <div class="shirina">
                 <div class="gallery">
-                    <a target="_blank" href="Srekjen.JPG">
-                        <img src="Srekjen.JPG" alt="Srekjen" width="288" height="432">
+                    <a target="_blank" href="Sliki/Srekjen.JPG">
+                        <img src="Sliki/Srekjen.JPG" alt="Srekjen" width="288" height="432">
                     </a>
                     <div class="description">Winner Boro<br>
-                        <input type = "button" value = "Like" id="LikeButton3">
-                        <span id="DisplayCount3">0</span> - Likes
+                        <input type = "image" name = "Like" id="LikeButton3" src="Sliki/lajk.png" width="40" height="40">
+                        <span id="DisplayCount3">0</span> - Likes<br>
 
                         <input type="text" id="Comment3" size="10">
-                        <input type = "button" value = "Submit" id="PasteComment3"><br>
+                        <input type = "image" name = "Submit" id="PasteComment3" src="Sliki/koment.png" width="30" height="30"><br>
                         <p id="DisplayComment3"></p>
                     </div>
                 </div>
@@ -186,15 +135,15 @@
 
             <div class="shirina">
                 <div class="gallery">
-                    <a target="_blank" href="Rap.JPG">
-                        <img src="Rap.JPG" alt="Rap" width="600" height="800">
+                    <a target="_blank" href="Sliki/Rap.JPG">
+                        <img src="Sliki/Rap.JPG" alt="Rap" width="600" height="800">
                     </a>
                     <div class="description">Rapping Boro.. For some reason<br>
-                        <input type = "button" value = "Like" id="LikeButton4">
-                        <span id="DisplayCount4">0</span> - Likes
+                        <input type = "image" name = "Like" id="LikeButton4" src="Sliki/lajk.png" width="40" height="40">
+                        <span id="DisplayCount4">0</span> - Likes<br>
 
                         <input type="text" id="Comment4" size="10">
-                        <input type = "button" value = "Submit" id="PasteComment4"><br>
+                        <input type = "image" name = "Submit" id="PasteComment4" src="Sliki/koment.png" width="30" height="30"><br>
                         <p id="DisplayComment4"></p>
                     </div>
                 </div>
@@ -202,15 +151,15 @@
 
             <div class="shirina">
                 <div class="gallery">
-                    <a target="_blank" href="Karanje.JPG">
-                        <img src="Karanje.JPG" alt="Angry" width="288" height="432">
+                    <a target="_blank" href="Sliki/Karanje.JPG">
+                        <img src="Sliki/Karanje.JPG" alt="Angry" width="288" height="432">
                     </a>
                     <div class="description">Angry Boro<br>
-                        <input type = "button" value = "Like" id="LikeButton5">
-                        <span id="DisplayCount5">0</span> - Likes
+                        <input type = "image" name = "Like" id="LikeButton5" src="Sliki/lajk.png" width="40" height="40">
+                        <span id="DisplayCount5">0</span> - Likes<br>
                         
                         <input type="text" id="Comment5" size="10">
-                        <input type = "button" value = "Submit" id="PasteComment5"><br>
+                        <input type = "image" name = "Submit" id="PasteComment5" src="Sliki/koment.png" width="30" height="30"><br>
                         <p id="DisplayComment5"></p>
                     </div>
                 </div>
@@ -218,15 +167,15 @@
 
             <div class="shirina">
                 <div class="gallery">
-                    <a target="_blank" href="Vnimatelen.JPG">
-                        <img src="Vnimatelen.JPG" alt="Vnimatelen" width="288" height="432">
+                    <a target="_blank" href="Sliki/Vnimatelen.JPG">
+                        <img src="Sliki/Vnimatelen.JPG" alt="Vnimatelen" width="288" height="432">
                     </a>
                     <div class="description">Happy Boro<br>
-                        <input type = "button" value = "Like" id="LikeButton6">
-                        <span id="DisplayCount6">0</span> - Likes
+                        <input type = "image" name = "Like" id="LikeButton6" src="Sliki/lajk.png" width="40" height="40">
+                        <span id="DisplayCount6">0</span> - Likes<br>
 
                         <input type="text" id="Comment6" size="10">
-                        <input type = "button" value = "Submit" id="PasteComment6"><br>
+                        <input type = "image" name = "Submit" id="PasteComment6" src="Sliki/koment.png" width="30" height="30"><br>
                         <p id="DisplayComment6"></p>
                     </div>
                 </div>
@@ -249,7 +198,6 @@
             </label></p>
             <p>
                 <input type = "button" value = "Submit" id="PostButton">
-                <input type = "reset" value = "Clear">
                 <p id="DisplayPost"></p>
             </p>
             </form>
@@ -304,13 +252,16 @@
             <hr>
 
             <footer>
-                <h2 id="Contact">Contact information:</h2>
-                <address>Contact me at:<br><a href="mailto:borisstev1@t-home.mk">
-                    E-Mail<br></a>
+                <h2 id="Contact">Contact information</h2>
+                <address>Contact me at:<br>
+                    <a href="mailto:borisstev1@t-home.mk">
+                    <img src="Sliki/mejl.png" alt="mejl_ikona" width="30" height="30"><br></a>
+
                     <a href="https://www.instagram.com/borioos/">
-                    Instagram<br></a>
+                    <img src="Sliki/insta.png" alt="insta_ikona" width="30" height="30"><br></a>
+
                     <a href="https://www.facebook.com/boris.stevanovski">
-                    Facebook</a>
+                    <img src="Sliki/fb.png" alt="fb_ikona" width="30" height="30"></a>
                 </address>
             </footer>
         </div>
@@ -318,6 +269,8 @@
         <script src="likes.js"></script>
         <script src="comments.js"></script>
         <script src="post.js"></script>
+        <script src="load.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     </body>
 </html>

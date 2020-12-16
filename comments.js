@@ -19,37 +19,49 @@ var display6 = document.getElementById("DisplayComment6");
 function SubmitComment1()
 {
     var x = document.getElementById("Comment1");
-    display1.innerHTML = x.value;
+    var par = document.createElement("P");
+    par.innerHTML = "- " + x.value;
+    display1.appendChild(par);
 }
 
 function SubmitComment2()
 {
     var x = document.getElementById("Comment2");
-    display2.innerHTML = x.value;
+    var par = document.createElement("P");
+    par.innerHTML = "- " + x.value;
+    display2.appendChild(par);
 }
 
 function SubmitComment3()
 {
     var x = document.getElementById("Comment3");
-    display3.innerHTML = x.value;
+    var par = document.createElement("P");
+    par.innerHTML = "- " + x.value;
+    display3.appendChild(par);
 }
 
 function SubmitComment4()
 {
     var x = document.getElementById("Comment4");
-    display4.innerHTML = x.value;
+    var par = document.createElement("P");
+    par.innerHTML = "- " + x.value;
+    display4.appendChild(par);
 }
 
 function SubmitComment5()
 {
     var x = document.getElementById("Comment5");
-    display5.innerHTML = x.value;
+    var par = document.createElement("P");
+    par.innerHTML = "- " + x.value;
+    display5.appendChild(par);
 }
 
 function SubmitComment6()
 {
     var x = document.getElementById("Comment6");
-    display6.innerHTML = x.value;
+    var par = document.createElement("P");
+    par.innerHTML = "- " + x.value;
+    display6.appendChild(par);
 }
 
 paste1.onclick = SubmitComment1;

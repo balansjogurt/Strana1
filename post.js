@@ -1,5 +1,5 @@
 function Post()
-{
+{   
     var comment = document.getElementById("PostComment").value;
     var ime = document.getElementById("PostName").value;
 
@@ -9,9 +9,16 @@ function Post()
     var godina = data.getFullYear().toLocaleString();
 
     var datata = den + "/" + mesec + "/" + godina;
-    var komentar = datata + " ---> " + ime + " : " + comment;
+    var komentar = datata + " : " + ime + " : " + comment;
 
-    document.getElementById("DisplayPost").innerHTML = komentar;
+    if(ime != '' && komentar != '')
+    {
+        var par = document.createElement("P");
+        par.innerHTML = komentar;
+        var tekst = document.createElement("div");
+        tekst.appendChild(par);
+        document.getElementById("DisplayPost").appendChild(par);
+    }
 }
 
 document.getElementById("PostButton").onclick = Post;
